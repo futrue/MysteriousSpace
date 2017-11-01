@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "GuideTool.h"
 
 @interface AppDelegate ()
 
@@ -16,9 +17,21 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    
-
+    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.backgroundColor = [UIColor whiteColor];
+    self.window.rootViewController = [GuideTool chooseRootViewController];
+    [self configApper];
+    [self.window makeKeyAndVisible];
     return YES;
+}
+
+- (void)configApper{
+    // 导航栏中间标题颜色
+    UINavigationBar *appearance = [UINavigationBar appearance];
+    NSMutableDictionary *textAttrs = [NSMutableDictionary dictionary];
+    textAttrs[NSForegroundColorAttributeName] = [UIColor whiteColor];
+    textAttrs[NSFontAttributeName] = [UIFont boldSystemFontOfSize:16];
+    [appearance setTitleTextAttributes:textAttrs];
 }
 
 

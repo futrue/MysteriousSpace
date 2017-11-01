@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  MyProfileVC.h
 //  MysteriousSpace
 //
 //  Created by SongGuoxing on 2017/11/1.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface MyProfileVC : UIViewController
 
 @end
-
