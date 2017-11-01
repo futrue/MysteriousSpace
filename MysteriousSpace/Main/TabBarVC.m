@@ -8,6 +8,7 @@
 
 #import "TabBarVC.h"
 #import "MyProfileVC.h"
+#import "DataCenterVC.h"
 #import "HomeVC.h"
 
 #define kClassKey   @"rootVCClassString"
@@ -34,7 +35,11 @@
                                    kImgKey    : @"icon_shiji_",
                                    kSelImgKey : @"icon_shiji_s"},
                                  
-                                 
+                                 @{kClassKey  : @"DataCenterVC",
+                                   kTitleKey  : @"记忆",
+                                   kImgKey    : @"icon_shougongquan_",
+                                   kSelImgKey : @"icon_shougongquan_s"},
+
                                  @{kClassKey  : @"MyProfileVC",
                                    kTitleKey  : @"我的",
                                    kImgKey    : @"icon_wode_",

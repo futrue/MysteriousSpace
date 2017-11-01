@@ -17,6 +17,8 @@
 		2659DBF21FA9AD9C00BFB9C2 /* MyProfileVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2659DBF11FA9AD9C00BFB9C2 /* MyProfileVC.m */; };
 		2659DBF51FA9AE7400BFB9C2 /* XNavgationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2659DBF41FA9AE7400BFB9C2 /* XNavgationController.m */; };
 		2659DC211FA9B35800BFB9C2 /* GuideTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2659DC201FA9B35800BFB9C2 /* GuideTool.m */; };
+		2659DC241FA9B67600BFB9C2 /* DataCenterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2659DC231FA9B67600BFB9C2 /* DataCenterVC.m */; };
+		2659DC281FA9C4B300BFB9C2 /* LoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2659DC271FA9C4B300BFB9C2 /* LoginVC.m */; };
 		4A41C94EDF0EE5DF0B712B3E /* libPods-MysteriousSpace.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BB686F1317F8121FDD00A168 /* libPods-MysteriousSpace.a */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +54,11 @@
 		2659DC1D1FA9B27E00BFB9C2 /* UIView+Tools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Tools.m"; sourceTree = "<group>"; };
 		2659DC1F1FA9B35800BFB9C2 /* GuideTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuideTool.h; sourceTree = "<group>"; };
 		2659DC201FA9B35800BFB9C2 /* GuideTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuideTool.m; sourceTree = "<group>"; };
+		2659DC221FA9B67600BFB9C2 /* DataCenterVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataCenterVC.h; sourceTree = "<group>"; };
+		2659DC231FA9B67600BFB9C2 /* DataCenterVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataCenterVC.m; sourceTree = "<group>"; };
+		2659DC251FA9BE7D00BFB9C2 /* Define.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Define.h; sourceTree = "<group>"; };
+		2659DC261FA9C4B300BFB9C2 /* LoginVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginVC.h; sourceTree = "<group>"; };
+		2659DC271FA9C4B300BFB9C2 /* LoginVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginVC.m; sourceTree = "<group>"; };
 		BB686F1317F8121FDD00A168 /* libPods-MysteriousSpace.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MysteriousSpace.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D351B7222A42AAF60F14A132 /* Pods-MysteriousSpace.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MysteriousSpace.release.xcconfig"; path = "Pods/Target Support Files/Pods-MysteriousSpace/Pods-MysteriousSpace.release.xcconfig"; sourceTree = "<group>"; };
 		F9E1DED68F420137DD925DA0 /* Pods-MysteriousSpace.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MysteriousSpace.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MysteriousSpace/Pods-MysteriousSpace.debug.xcconfig"; sourceTree = "<group>"; };
@@ -100,6 +107,7 @@
 				2659DBC21FA994A900BFB9C2 /* LaunchScreen.storyboard */,
 				2659DBC51FA994A900BFB9C2 /* Info.plist */,
 				2659DBE61FA995E200BFB9C2 /* PrefixHeader.pch */,
+				2659DC251FA9BE7D00BFB9C2 /* Define.h */,
 				2659DBC61FA994A900BFB9C2 /* main.m */,
 			);
 			path = MysteriousSpace;
@@ -110,8 +118,12 @@
 			children = (
 				2659DBEA1FA9AD0700BFB9C2 /* TabBarVC.h */,
 				2659DBEB1FA9AD0700BFB9C2 /* TabBarVC.m */,
+				2659DC261FA9C4B300BFB9C2 /* LoginVC.h */,
+				2659DC271FA9C4B300BFB9C2 /* LoginVC.m */,
 				2659DBED1FA9AD7F00BFB9C2 /* HomeVC.h */,
 				2659DBEE1FA9AD7F00BFB9C2 /* HomeVC.m */,
+				2659DC221FA9B67600BFB9C2 /* DataCenterVC.h */,
+				2659DC231FA9B67600BFB9C2 /* DataCenterVC.m */,
 				2659DBF01FA9AD9C00BFB9C2 /* MyProfileVC.h */,
 				2659DBF11FA9AD9C00BFB9C2 /* MyProfileVC.m */,
 				2659DBF31FA9AE7400BFB9C2 /* XNavgationController.h */,
@@ -316,9 +328,11 @@
 			files = (
 				2659DBF21FA9AD9C00BFB9C2 /* MyProfileVC.m in Sources */,
 				2659DBEC1FA9AD0700BFB9C2 /* TabBarVC.m in Sources */,
+				2659DC281FA9C4B300BFB9C2 /* LoginVC.m in Sources */,
 				2659DC211FA9B35800BFB9C2 /* GuideTool.m in Sources */,
 				2659DBC71FA994A900BFB9C2 /* main.m in Sources */,
 				2659DBB91FA994A900BFB9C2 /* AppDelegate.m in Sources */,
+				2659DC241FA9B67600BFB9C2 /* DataCenterVC.m in Sources */,
 				2659DBF51FA9AE7400BFB9C2 /* XNavgationController.m in Sources */,
 				2659DBEF1FA9AD7F00BFB9C2 /* HomeVC.m in Sources */,
 			);
