@@ -13,6 +13,13 @@
 		2659DBC11FA994A900BFB9C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2659DBC01FA994A900BFB9C2 /* Assets.xcassets */; };
 		2659DBC41FA994A900BFB9C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2659DBC21FA994A900BFB9C2 /* LaunchScreen.storyboard */; };
 		2659DBC71FA994A900BFB9C2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2659DBC61FA994A900BFB9C2 /* main.m */; };
+		2659DBE01FA9952400BFB9C2 /* NSString+Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 2659DBD21FA9952400BFB9C2 /* NSString+Tools.m */; };
+		2659DBE11FA9952400BFB9C2 /* NSDate+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 2659DBD61FA9952400BFB9C2 /* NSDate+Utilities.m */; };
+		2659DBE21FA9952400BFB9C2 /* UIControlFastGet.m in Sources */ = {isa = PBXBuildFile; fileRef = 2659DBD91FA9952400BFB9C2 /* UIControlFastGet.m */; };
+		2659DBE31FA9952400BFB9C2 /* UILabel+Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 2659DBDB1FA9952400BFB9C2 /* UILabel+Tools.m */; };
+		2659DBE41FA9952400BFB9C2 /* UIView+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 2659DBDD1FA9952400BFB9C2 /* UIView+Category.m */; };
+		2659DBE51FA9952400BFB9C2 /* UIView+Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 2659DBDF1FA9952400BFB9C2 /* UIView+Tools.m */; };
+		4A41C94EDF0EE5DF0B712B3E /* libPods-MysteriousSpace.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BB686F1317F8121FDD00A168 /* libPods-MysteriousSpace.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +33,22 @@
 		2659DBC31FA994A900BFB9C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2659DBC51FA994A900BFB9C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2659DBC61FA994A900BFB9C2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2659DBD11FA9952400BFB9C2 /* NSString+Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Tools.h"; sourceTree = "<group>"; };
+		2659DBD21FA9952400BFB9C2 /* NSString+Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Tools.m"; sourceTree = "<group>"; };
+		2659DBD51FA9952400BFB9C2 /* NSDate+Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Utilities.h"; sourceTree = "<group>"; };
+		2659DBD61FA9952400BFB9C2 /* NSDate+Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Utilities.m"; sourceTree = "<group>"; };
+		2659DBD81FA9952400BFB9C2 /* UIControlFastGet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIControlFastGet.h; sourceTree = "<group>"; };
+		2659DBD91FA9952400BFB9C2 /* UIControlFastGet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIControlFastGet.m; sourceTree = "<group>"; };
+		2659DBDA1FA9952400BFB9C2 /* UILabel+Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+Tools.h"; sourceTree = "<group>"; };
+		2659DBDB1FA9952400BFB9C2 /* UILabel+Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Tools.m"; sourceTree = "<group>"; };
+		2659DBDC1FA9952400BFB9C2 /* UIView+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Category.h"; sourceTree = "<group>"; };
+		2659DBDD1FA9952400BFB9C2 /* UIView+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Category.m"; sourceTree = "<group>"; };
+		2659DBDE1FA9952400BFB9C2 /* UIView+Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Tools.h"; sourceTree = "<group>"; };
+		2659DBDF1FA9952400BFB9C2 /* UIView+Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Tools.m"; sourceTree = "<group>"; };
+		2659DBE61FA995E200BFB9C2 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		BB686F1317F8121FDD00A168 /* libPods-MysteriousSpace.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MysteriousSpace.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D351B7222A42AAF60F14A132 /* Pods-MysteriousSpace.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MysteriousSpace.release.xcconfig"; path = "Pods/Target Support Files/Pods-MysteriousSpace/Pods-MysteriousSpace.release.xcconfig"; sourceTree = "<group>"; };
+		F9E1DED68F420137DD925DA0 /* Pods-MysteriousSpace.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MysteriousSpace.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MysteriousSpace/Pods-MysteriousSpace.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A41C94EDF0EE5DF0B712B3E /* libPods-MysteriousSpace.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +68,8 @@
 			children = (
 				2659DBB61FA994A900BFB9C2 /* MysteriousSpace */,
 				2659DBB51FA994A900BFB9C2 /* Products */,
+				E4B0B7DD91DEC502F377D8DD /* Pods */,
+				E6BA886147955F40016ACEBC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +84,9 @@
 		2659DBB61FA994A900BFB9C2 /* MysteriousSpace */ = {
 			isa = PBXGroup;
 			children = (
+				2659DBCF1FA9952400BFB9C2 /* Category */,
+				2659DBCD1FA9952400BFB9C2 /* Main */,
+				2659DBCE1FA9952400BFB9C2 /* Utils */,
 				2659DBB71FA994A900BFB9C2 /* AppDelegate.h */,
 				2659DBB81FA994A900BFB9C2 /* AppDelegate.m */,
 				2659DBBA1FA994A900BFB9C2 /* ViewController.h */,
@@ -66,9 +95,92 @@
 				2659DBC01FA994A900BFB9C2 /* Assets.xcassets */,
 				2659DBC21FA994A900BFB9C2 /* LaunchScreen.storyboard */,
 				2659DBC51FA994A900BFB9C2 /* Info.plist */,
+				2659DBE61FA995E200BFB9C2 /* PrefixHeader.pch */,
 				2659DBC61FA994A900BFB9C2 /* main.m */,
 			);
 			path = MysteriousSpace;
+			sourceTree = "<group>";
+		};
+		2659DBCD1FA9952400BFB9C2 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		2659DBCE1FA9952400BFB9C2 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		2659DBCF1FA9952400BFB9C2 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				2659DBD01FA9952400BFB9C2 /*  NSString+Tools */,
+				2659DBD31FA9952400BFB9C2 /* NSAttributedString+Attributes */,
+				2659DBD41FA9952400BFB9C2 /* NSDate+Utilities */,
+				2659DBD71FA9952400BFB9C2 /* UIView+Tools */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		2659DBD01FA9952400BFB9C2 /*  NSString+Tools */ = {
+			isa = PBXGroup;
+			children = (
+				2659DBD11FA9952400BFB9C2 /* NSString+Tools.h */,
+				2659DBD21FA9952400BFB9C2 /* NSString+Tools.m */,
+			);
+			path = " NSString+Tools";
+			sourceTree = "<group>";
+		};
+		2659DBD31FA9952400BFB9C2 /* NSAttributedString+Attributes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "NSAttributedString+Attributes";
+			sourceTree = "<group>";
+		};
+		2659DBD41FA9952400BFB9C2 /* NSDate+Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				2659DBD51FA9952400BFB9C2 /* NSDate+Utilities.h */,
+				2659DBD61FA9952400BFB9C2 /* NSDate+Utilities.m */,
+			);
+			path = "NSDate+Utilities";
+			sourceTree = "<group>";
+		};
+		2659DBD71FA9952400BFB9C2 /* UIView+Tools */ = {
+			isa = PBXGroup;
+			children = (
+				2659DBD81FA9952400BFB9C2 /* UIControlFastGet.h */,
+				2659DBD91FA9952400BFB9C2 /* UIControlFastGet.m */,
+				2659DBDA1FA9952400BFB9C2 /* UILabel+Tools.h */,
+				2659DBDB1FA9952400BFB9C2 /* UILabel+Tools.m */,
+				2659DBDC1FA9952400BFB9C2 /* UIView+Category.h */,
+				2659DBDD1FA9952400BFB9C2 /* UIView+Category.m */,
+				2659DBDE1FA9952400BFB9C2 /* UIView+Tools.h */,
+				2659DBDF1FA9952400BFB9C2 /* UIView+Tools.m */,
+			);
+			path = "UIView+Tools";
+			sourceTree = "<group>";
+		};
+		E4B0B7DD91DEC502F377D8DD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F9E1DED68F420137DD925DA0 /* Pods-MysteriousSpace.debug.xcconfig */,
+				D351B7222A42AAF60F14A132 /* Pods-MysteriousSpace.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E6BA886147955F40016ACEBC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BB686F1317F8121FDD00A168 /* libPods-MysteriousSpace.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -78,9 +190,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2659DBCA1FA994A900BFB9C2 /* Build configuration list for PBXNativeTarget "MysteriousSpace" */;
 			buildPhases = (
+				979F605FEA7F32C2BEDD836D /* [CP] Check Pods Manifest.lock */,
 				2659DBB01FA994A900BFB9C2 /* Sources */,
 				2659DBB11FA994A900BFB9C2 /* Frameworks */,
 				2659DBB21FA994A900BFB9C2 /* Resources */,
+				08FD8A1CDA656C4AE856F02E /* [CP] Embed Pods Frameworks */,
+				6BC242EE6462C91BB153421C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -137,14 +252,71 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		08FD8A1CDA656C4AE856F02E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MysteriousSpace/Pods-MysteriousSpace-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6BC242EE6462C91BB153421C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MysteriousSpace/Pods-MysteriousSpace-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		979F605FEA7F32C2BEDD836D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MysteriousSpace-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2659DBB01FA994A900BFB9C2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2659DBE21FA9952400BFB9C2 /* UIControlFastGet.m in Sources */,
+				2659DBE51FA9952400BFB9C2 /* UIView+Tools.m in Sources */,
 				2659DBBC1FA994A900BFB9C2 /* ViewController.m in Sources */,
 				2659DBC71FA994A900BFB9C2 /* main.m in Sources */,
 				2659DBB91FA994A900BFB9C2 /* AppDelegate.m in Sources */,
+				2659DBE01FA9952400BFB9C2 /* NSString+Tools.m in Sources */,
+				2659DBE31FA9952400BFB9C2 /* UILabel+Tools.m in Sources */,
+				2659DBE41FA9952400BFB9C2 /* UIView+Category.m in Sources */,
+				2659DBE11FA9952400BFB9C2 /* NSDate+Utilities.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,10 +448,15 @@
 		};
 		2659DBCB1FA994A900BFB9C2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9E1DED68F420137DD925DA0 /* Pods-MysteriousSpace.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 547CWCRBRD;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/MysteriousSpace/PrefixHeader.pch";
 				INFOPLIST_FILE = MysteriousSpace/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = sgx.MysteriousSpace;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -289,10 +466,15 @@
 		};
 		2659DBCC1FA994A900BFB9C2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D351B7222A42AAF60F14A132 /* Pods-MysteriousSpace.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 547CWCRBRD;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/MysteriousSpace/PrefixHeader.pch";
 				INFOPLIST_FILE = MysteriousSpace/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = sgx.MysteriousSpace;
 				PRODUCT_NAME = "$(TARGET_NAME)";

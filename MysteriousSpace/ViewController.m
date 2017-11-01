@@ -16,7 +16,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    self.title = @"卡包";
+    self.view.backgroundColor = [UIColor colorWithWhite:0.9 alpha:0.9];
+    
 }
 
 
