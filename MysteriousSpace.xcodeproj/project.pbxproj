@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		264CDD8C1FAAF12300CE255C /* UserInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 264CDD8B1FAAF12300CE255C /* UserInfoView.m */; };
 		2659DBB91FA994A900BFB9C2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2659DBB81FA994A900BFB9C2 /* AppDelegate.m */; };
 		2659DBBF1FA994A900BFB9C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2659DBBD1FA994A900BFB9C2 /* Main.storyboard */; };
 		2659DBC11FA994A900BFB9C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2659DBC01FA994A900BFB9C2 /* Assets.xcassets */; };
@@ -19,10 +20,14 @@
 		2659DC211FA9B35800BFB9C2 /* GuideTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2659DC201FA9B35800BFB9C2 /* GuideTool.m */; };
 		2659DC241FA9B67600BFB9C2 /* DataCenterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2659DC231FA9B67600BFB9C2 /* DataCenterVC.m */; };
 		2659DC281FA9C4B300BFB9C2 /* LoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2659DC271FA9C4B300BFB9C2 /* LoginVC.m */; };
+		2659DC2B1FA9C7DA00BFB9C2 /* CardManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2659DC2A1FA9C7DA00BFB9C2 /* CardManager.m */; };
+		2659DC2E1FA9C89400BFB9C2 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 2659DC2D1FA9C89400BFB9C2 /* Card.m */; };
 		4A41C94EDF0EE5DF0B712B3E /* libPods-MysteriousSpace.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BB686F1317F8121FDD00A168 /* libPods-MysteriousSpace.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		264CDD8A1FAAF12300CE255C /* UserInfoView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserInfoView.h; sourceTree = "<group>"; };
+		264CDD8B1FAAF12300CE255C /* UserInfoView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserInfoView.m; sourceTree = "<group>"; };
 		2659DBB41FA994A900BFB9C2 /* MysteriousSpace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MysteriousSpace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2659DBB71FA994A900BFB9C2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2659DBB81FA994A900BFB9C2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -59,6 +64,12 @@
 		2659DC251FA9BE7D00BFB9C2 /* Define.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Define.h; sourceTree = "<group>"; };
 		2659DC261FA9C4B300BFB9C2 /* LoginVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginVC.h; sourceTree = "<group>"; };
 		2659DC271FA9C4B300BFB9C2 /* LoginVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginVC.m; sourceTree = "<group>"; };
+		2659DC291FA9C7DA00BFB9C2 /* CardManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CardManager.h; sourceTree = "<group>"; };
+		2659DC2A1FA9C7DA00BFB9C2 /* CardManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CardManager.m; sourceTree = "<group>"; };
+		2659DC2C1FA9C89400BFB9C2 /* Card.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Card.h; sourceTree = "<group>"; };
+		2659DC2D1FA9C89400BFB9C2 /* Card.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Card.m; sourceTree = "<group>"; };
+		2659DC2F1FA9CC4200BFB9C2 /* UIColor+HEX.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HEX.m"; sourceTree = "<group>"; };
+		2659DC301FA9CC4200BFB9C2 /* UIColor+HEX.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+HEX.h"; sourceTree = "<group>"; };
 		BB686F1317F8121FDD00A168 /* libPods-MysteriousSpace.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MysteriousSpace.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D351B7222A42AAF60F14A132 /* Pods-MysteriousSpace.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MysteriousSpace.release.xcconfig"; path = "Pods/Target Support Files/Pods-MysteriousSpace/Pods-MysteriousSpace.release.xcconfig"; sourceTree = "<group>"; };
 		F9E1DED68F420137DD925DA0 /* Pods-MysteriousSpace.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MysteriousSpace.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MysteriousSpace/Pods-MysteriousSpace.debug.xcconfig"; sourceTree = "<group>"; };
@@ -126,8 +137,14 @@
 				2659DC231FA9B67600BFB9C2 /* DataCenterVC.m */,
 				2659DBF01FA9AD9C00BFB9C2 /* MyProfileVC.h */,
 				2659DBF11FA9AD9C00BFB9C2 /* MyProfileVC.m */,
+				264CDD8A1FAAF12300CE255C /* UserInfoView.h */,
+				264CDD8B1FAAF12300CE255C /* UserInfoView.m */,
 				2659DBF31FA9AE7400BFB9C2 /* XNavgationController.h */,
 				2659DBF41FA9AE7400BFB9C2 /* XNavgationController.m */,
+				2659DC291FA9C7DA00BFB9C2 /* CardManager.h */,
+				2659DC2A1FA9C7DA00BFB9C2 /* CardManager.m */,
+				2659DC2C1FA9C89400BFB9C2 /* Card.h */,
+				2659DC2D1FA9C89400BFB9C2 /* Card.m */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -135,6 +152,8 @@
 		2659DC0D1FA9B27E00BFB9C2 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				2659DC301FA9CC4200BFB9C2 /* UIColor+HEX.h */,
+				2659DC2F1FA9CC4200BFB9C2 /* UIColor+HEX.m */,
 				2659DC0E1FA9B27E00BFB9C2 /*  NSString+Tools */,
 				2659DC121FA9B27E00BFB9C2 /* NSDate+Utilities */,
 				2659DC151FA9B27E00BFB9C2 /* UIView+Tools */,
@@ -327,13 +346,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				2659DBF21FA9AD9C00BFB9C2 /* MyProfileVC.m in Sources */,
+				2659DC2B1FA9C7DA00BFB9C2 /* CardManager.m in Sources */,
 				2659DBEC1FA9AD0700BFB9C2 /* TabBarVC.m in Sources */,
+				264CDD8C1FAAF12300CE255C /* UserInfoView.m in Sources */,
 				2659DC281FA9C4B300BFB9C2 /* LoginVC.m in Sources */,
 				2659DC211FA9B35800BFB9C2 /* GuideTool.m in Sources */,
 				2659DBC71FA994A900BFB9C2 /* main.m in Sources */,
 				2659DBB91FA994A900BFB9C2 /* AppDelegate.m in Sources */,
 				2659DC241FA9B67600BFB9C2 /* DataCenterVC.m in Sources */,
 				2659DBF51FA9AE7400BFB9C2 /* XNavgationController.m in Sources */,
+				2659DC2E1FA9C89400BFB9C2 /* Card.m in Sources */,
 				2659DBEF1FA9AD7F00BFB9C2 /* HomeVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

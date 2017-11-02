@@ -33,7 +33,7 @@
 #define COLOR_WHITE RGB(255, 255, 255)
 #define COLOR_TEXT_CONTENT RGB(102, 102, 102)
 
-#define GPBgColor [UIColor colorWithRed:0.92 green:0.34 blue:0.32 alpha:1]
+#define ThemeColor [UIColor colorWithRed:0.92 green:0.34 blue:0.32 alpha:1]
 
 /** 正常字体 */
 #define FONT(fontSize) ([[[UIDevice currentDevice] systemVersion] floatValue] < 9.0f) ? [UIFont fontWithName:@"Helvetica" size:fontSize] : [UIFont fontWithName:@"PingFangSC-Regular" size:fontSize]

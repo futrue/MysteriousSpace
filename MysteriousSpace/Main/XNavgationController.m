@@ -16,7 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [UINavigationBar appearance].barTintColor = GPBgColor;
+    [UINavigationBar appearance].barTintColor = ThemeColor;
 }
 
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated {

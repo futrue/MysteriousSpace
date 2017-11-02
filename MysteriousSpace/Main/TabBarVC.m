@@ -36,7 +36,7 @@
                                    kSelImgKey : @"icon_shiji_s"},
                                  
                                  @{kClassKey  : @"DataCenterVC",
-                                   kTitleKey  : @"记忆",
+                                   kTitleKey  : @"卡包",
                                    kImgKey    : @"icon_shougongquan_",
                                    kSelImgKey : @"icon_shougongquan_s"},
 
@@ -54,14 +54,14 @@
         item.title = dict[kTitleKey];
         item.image = [UIImage imageNamed:dict[kImgKey]];
         item.selectedImage = [[UIImage imageNamed:dict[kSelImgKey]] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-        [item setTitleTextAttributes:@{NSForegroundColorAttributeName : GPBgColor} forState:UIControlStateSelected];
+        [item setTitleTextAttributes:@{NSForegroundColorAttributeName : ThemeColor} forState:UIControlStateSelected];
         [self addChildViewController:nav];
         
     }];
-    
-
    
 }
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
