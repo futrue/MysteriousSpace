@@ -20,27 +20,30 @@ typedef NS_ENUM (NSInteger,CardType) {
     CardTypeBOB, //Bank of Beijing                          北京银行
     CardTypeGYB, //BANK OF GUIYANG                          贵阳银行
     CardTypeGZNX,//GuiZhou Rural Credit Union               贵州省农村信用社
-
 };
 
 @interface Card : NSObject
 
-/** 图片 */
-@property (nonatomic, copy) NSString *imageUrl;
+/** 名字 */
+@property (nonatomic, copy) NSString *userName;
+/** 卡号 */
+@property (nonatomic, copy) NSString *number;
 /** 卡类型 */
 @property (nonatomic, assign) CardType type;
 /** 卡类型对应的名字 */
 @property (nonatomic, copy, readonly) NSString *cardName;
-/** 名字 */
-@property (nonatomic, copy) NSString *userName;
 /** 电话 */
 @property (nonatomic, copy) NSString *phone;
-/** 卡号 */
-@property (nonatomic, copy) NSString *number;
 /** 登录密码 */
 @property (nonatomic, copy) NSString *loginPassword;
 /** 支付密码 */
 @property (nonatomic, copy) NSString *payPassword;
+/** 图片 */
+@property (nonatomic, copy) NSString *imageUrl;
+/** 身份证号 */
+@property (nonatomic, copy) NSString *ID_Num;
 
-
++ (NSArray *)nameAarray;
++ (NSArray *)propertyAarray;
+- (void)setInfo:(NSArray *)info;
 @end

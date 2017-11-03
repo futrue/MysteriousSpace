@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		264CDD8C1FAAF12300CE255C /* UserInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 264CDD8B1FAAF12300CE255C /* UserInfoView.m */; };
+		264CDD8F1FAB04D300CE255C /* AddCardVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 264CDD8E1FAB04D300CE255C /* AddCardVC.m */; };
+		264CDD921FAB23D700CE255C /* AddCardItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 264CDD911FAB23D700CE255C /* AddCardItemView.m */; };
 		2659DBB91FA994A900BFB9C2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2659DBB81FA994A900BFB9C2 /* AppDelegate.m */; };
 		2659DBBF1FA994A900BFB9C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2659DBBD1FA994A900BFB9C2 /* Main.storyboard */; };
 		2659DBC11FA994A900BFB9C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2659DBC01FA994A900BFB9C2 /* Assets.xcassets */; };
@@ -28,6 +30,10 @@
 /* Begin PBXFileReference section */
 		264CDD8A1FAAF12300CE255C /* UserInfoView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserInfoView.h; sourceTree = "<group>"; };
 		264CDD8B1FAAF12300CE255C /* UserInfoView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserInfoView.m; sourceTree = "<group>"; };
+		264CDD8D1FAB04D300CE255C /* AddCardVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddCardVC.h; sourceTree = "<group>"; };
+		264CDD8E1FAB04D300CE255C /* AddCardVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddCardVC.m; sourceTree = "<group>"; };
+		264CDD901FAB23D700CE255C /* AddCardItemView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddCardItemView.h; sourceTree = "<group>"; };
+		264CDD911FAB23D700CE255C /* AddCardItemView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddCardItemView.m; sourceTree = "<group>"; };
 		2659DBB41FA994A900BFB9C2 /* MysteriousSpace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MysteriousSpace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2659DBB71FA994A900BFB9C2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2659DBB81FA994A900BFB9C2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -145,6 +151,10 @@
 				2659DC2A1FA9C7DA00BFB9C2 /* CardManager.m */,
 				2659DC2C1FA9C89400BFB9C2 /* Card.h */,
 				2659DC2D1FA9C89400BFB9C2 /* Card.m */,
+				264CDD8D1FAB04D300CE255C /* AddCardVC.h */,
+				264CDD8E1FAB04D300CE255C /* AddCardVC.m */,
+				264CDD901FAB23D700CE255C /* AddCardItemView.h */,
+				264CDD911FAB23D700CE255C /* AddCardItemView.m */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -352,8 +362,10 @@
 				2659DC281FA9C4B300BFB9C2 /* LoginVC.m in Sources */,
 				2659DC211FA9B35800BFB9C2 /* GuideTool.m in Sources */,
 				2659DBC71FA994A900BFB9C2 /* main.m in Sources */,
+				264CDD921FAB23D700CE255C /* AddCardItemView.m in Sources */,
 				2659DBB91FA994A900BFB9C2 /* AppDelegate.m in Sources */,
 				2659DC241FA9B67600BFB9C2 /* DataCenterVC.m in Sources */,
+				264CDD8F1FAB04D300CE255C /* AddCardVC.m in Sources */,
 				2659DBF51FA9AE7400BFB9C2 /* XNavgationController.m in Sources */,
 				2659DC2E1FA9C89400BFB9C2 /* Card.m in Sources */,
 				2659DBEF1FA9AD7F00BFB9C2 /* HomeVC.m in Sources */,

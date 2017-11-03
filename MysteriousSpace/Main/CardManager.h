@@ -10,9 +10,15 @@
 
 typedef void(^Result)(BOOL success, NSString *errMsg);
 
+@class Card;
 @interface CardManager : NSObject
 
 + (CardManager *)sharedManager;
 
+- (void)addCard:(Card *)card;
+
+- (void)removeCard:(Card *)card;
+
+- (NSArray<Card *> *)allCards;
 
 @end

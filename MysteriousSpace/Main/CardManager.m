@@ -12,7 +12,7 @@
 static CardManager *manager = nil;
 
 @interface CardManager ()
-@property (nonatomic, strong) NSArray <Card *> *cardArray;
+@property (nonatomic, strong) NSMutableArray <Card *> *cardArray;
 
 @end
 
@@ -27,14 +27,27 @@ static CardManager *manager = nil;
     return manager;
 }
 
-- (void)saveCard:(Card *)card completion:(Result)result {
-    
+- (void)addCard:(Card *)card {
+    [self.cardArray addObject:card];
 }
 
+- (void)removeCard:(Card *)card {
+    [self.cardArray removeObject:card];
+}
 
-- (Card *)getCard {
-    
-    return nil;
+//- (void)removeCard:(Card *)card completion:(Result)result {
+//    [self.cardArray removeObject:card];
+//}
+
+- (NSArray<Card *> *)allCards {
+    return self.cardArray;
+}
+
+- (NSMutableArray<Card *> *)cardArray {
+    if (!_cardArray) {
+        _cardArray = @[].mutableCopy;
+    }
+    return _cardArray;
 }
 
 @end

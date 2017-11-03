@@ -31,6 +31,7 @@
     NSMutableDictionary *textAttrs = [NSMutableDictionary dictionary];
     textAttrs[NSForegroundColorAttributeName] = [UIColor whiteColor];
     textAttrs[NSFontAttributeName] = [UIFont boldSystemFontOfSize:16];
+    [appearance setTintColor:COLOR_WHITE];
     [appearance setTitleTextAttributes:textAttrs];
 }
 

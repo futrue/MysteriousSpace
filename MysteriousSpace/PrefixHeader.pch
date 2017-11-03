@@ -21,6 +21,7 @@
 //#import "GroupSettingVC.h"
 #import "XNavgationController.h"
 #import "Define.h"
+#import "CardManager.h"
 
 #endif
 
