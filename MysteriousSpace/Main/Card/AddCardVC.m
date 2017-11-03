@@ -21,7 +21,6 @@
     self.title = @"添加";
     self.view.backgroundColor = COLOR_BACKGROUND;
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"保存" style:UIBarButtonItemStyleDone target:self action:@selector(saveAction)];
-    self.navigationItem.hidesBackButton = NO;
     [self addViews];
 }
 
