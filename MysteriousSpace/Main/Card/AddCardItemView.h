@@ -13,5 +13,6 @@
 + (AddCardItemView *)viewWithTitle:(NSString *)title;
 @property(nonatomic, copy, readonly) NSString *title;
 @property(nonatomic, copy) NSString *inputText;
-
+@property(nonatomic, copy) void (^beginEditingBlock)(UITextField *tf);
+@property (nonatomic, strong, readonly) UITextField *textField;
 @end

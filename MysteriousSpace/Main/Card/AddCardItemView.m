@@ -28,42 +28,50 @@
 - (instancetype)initWithTitle:(NSString *)title {
     self = [super init];
     if (self) {
-        _title = title;
-        NSArray *array = [Card propertyAarray];
-        if ([title isEqualToString:array[0]]) {
-            self.textFieldMaxLength = 4;
-            self.placeholder = title;
-        } else if ([title isEqualToString:array[1]]) {
-            self.textFieldMaxLength = 19;
-            self.placeholder = [NSString stringWithFormat:@"银行%@",title];
-        } else if ([title isEqualToString:array[2]]) {
-            self.textFieldMaxLength = 10;
-            self.placeholder = [NSString stringWithFormat:@"银行%@",title];
-        } else if ([title isEqualToString:array[3]]) {
-            self.textFieldMaxLength = 11;
-            self.placeholder = @"预留手机号码";
-        } else if ([title isEqualToString:array[4]]) {
-            self.textFieldMaxLength = 6;
-            self.placeholder = title;
-        } else if ([title isEqualToString:array[5]]) {
-            self.textFieldMaxLength = 6;
-            self.placeholder = title;
-        } else if ([title isEqualToString:array[6]]) {
-            self.textFieldMaxLength = 1000;
-            self.placeholder = title;
-        } else if ([title isEqualToString:array[7]]) {
-            self.textFieldMaxLength = 18;
-            self.placeholder = title;
-        } else {
-            self.textFieldMaxLength = 10;
-            self.placeholder = @"请输入";
-        }
-        
+        self.title = title;
         [self setupUI];
     }
     return self;
 }
 
+- (void)setTitle:(NSString *)title {
+    _title = title;
+    NSArray *array = [Card propertyAarray];
+    if ([title isEqualToString:array[0]]) {
+        self.textFieldMaxLength = 4;
+        self.placeholder = title;
+        self.textField.keyboardType = UIKeyboardTypeDefault;
+    } else if ([title isEqualToString:array[1]]) {
+        self.textFieldMaxLength = 19;
+        self.placeholder = [NSString stringWithFormat:@"银行%@",title];
+        self.textField.keyboardType = UIKeyboardTypeNumberPad;
+    } else if ([title isEqualToString:array[2]]) {
+        self.textFieldMaxLength = 10;
+        self.placeholder = [NSString stringWithFormat:@"银行%@",title];
+    } else if ([title isEqualToString:array[3]]) {
+        self.textFieldMaxLength = 11;
+        self.placeholder = @"预留手机号码";
+        self.textField.keyboardType = UIKeyboardTypeNumberPad;
+    } else if ([title isEqualToString:array[4]]) {
+        self.textFieldMaxLength = 6;
+        self.placeholder = title;
+        self.textField.keyboardType = UIKeyboardTypeNumberPad;
+    } else if ([title isEqualToString:array[5]]) {
+        self.textFieldMaxLength = 6;
+        self.placeholder = title;
+        self.textField.keyboardType = UIKeyboardTypeNumberPad;
+    } else if ([title isEqualToString:array[6]]) {
+        self.textFieldMaxLength = 1000;
+        self.placeholder = title;
+    } else if ([title isEqualToString:array[7]]) {
+        self.textFieldMaxLength = 18;
+        self.placeholder = title;
+        self.textField.keyboardType = UIKeyboardTypeNamePhonePad;
+    } else {
+        self.textFieldMaxLength = 10;
+        self.placeholder = @"请输入";
+    }
+}
 
 - (void)setupUI {
     self.backgroundColor = COLOR_WHITE;
@@ -100,6 +108,12 @@
     _inputText = self.textField.text ? : @"";
 }
 
+- (void)textFieldDidBeginEditing:(UITextField *)textField {
+    if (self.beginEditingBlock) {
+//        [textField resignFirstResponder];
+        self.beginEditingBlock(textField);
+    }
+}
 
 //- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string{
 //    NSLog(@"--changed----%@",textField.text);

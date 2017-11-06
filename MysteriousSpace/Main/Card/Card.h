@@ -45,5 +45,5 @@ typedef NS_ENUM (NSInteger,CardType) {
 
 + (NSArray *)nameAarray;
 + (NSArray *)propertyAarray;
-- (void)setInfo:(NSArray *)info;
+
 @end

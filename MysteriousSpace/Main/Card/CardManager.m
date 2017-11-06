@@ -27,6 +27,28 @@ static CardManager *manager = nil;
     return manager;
 }
 
+- (void)setInfo:(NSArray *)info compltion:(Result)result {
+    if ([info[1] length] < 10) {
+        if (result) {
+            result(NO, @"卡号不全");
+        }
+    }
+    // 顺序与propertyAarray对应
+    Card *card = [[Card alloc] init];
+    card.userName = info[0];
+    card.number = info[1];
+    card.type = [info[2] integerValue];
+    card.phone = info[3];
+    card.loginPassword = info[4];
+    card.payPassword = info[5];
+    card.imageUrl = info[6];
+    card.ID_Num = info[7];
+    [self addCard:card];
+    if (result) {
+        result(YES, @"添加成功");
+    }
+}
+
 - (void)addCard:(Card *)card {
     [self.cardArray addObject:card];
 }

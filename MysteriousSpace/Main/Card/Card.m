@@ -53,24 +53,12 @@
 }
 
 + (NSArray *)nameAarray {
-    return @[@"中国农业银行",@"中国建设银行",@"中国工商银行",@"中国招商银行",@"中国交通银行",@"中国银行",@"北京银行",@"贵阳银行",@"贵州省农村信用社",@"贵州省农村信用社"];
+    return @[@"中国农业银行",@"中国建设银行",@"中国工商银行",@"中国招商银行",@"中国交通银行",@"中国银行",@"北京银行",@"贵阳银行",@"贵州省农村信用社"];
 }
 
 + (NSArray *)propertyAarray {
     return @[@"姓名",@"卡号",@"卡类型",@"绑定手机号",@"登录密码",@"支付密码",@"图片",@"身份证号"];
 }
 
-- (void)setInfo:(NSArray *)info {
-    // 顺序与propertyAarray对应
-    
-    self.userName = info[0];
-    self.number = info[1];
-    self.type = [info[2] integerValue];
-    self.phone = info[3];
-    self.loginPassword = info[4];
-    self.payPassword = info[5];
-    self.imageUrl = info[6];
-    self.ID_Num = info[7];
-}
 
 @end
