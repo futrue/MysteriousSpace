@@ -22,6 +22,8 @@
 #import "XNavgationController.h"
 #import "Define.h"
 #import "CardManager.h"
+#import "XTableView.h"
+
 
 #endif
 

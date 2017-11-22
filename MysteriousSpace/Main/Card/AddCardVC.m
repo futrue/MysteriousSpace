@@ -59,7 +59,7 @@
             if (previousView) {
                 make.top.equalTo(previousView.mas_bottom).offset(10.f);
             } else {
-                make.top.equalTo(self.contentView).offset(74.f);
+                make.top.equalTo(self.contentView).offset(10.f);
             }
             make.leading.trailing.equalTo(self.contentView);
         }];

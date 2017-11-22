@@ -24,6 +24,8 @@
 		2659DBC41FA994A900BFB9C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2659DBC21FA994A900BFB9C2 /* LaunchScreen.storyboard */; };
 		2659DBC71FA994A900BFB9C2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2659DBC61FA994A900BFB9C2 /* main.m */; };
 		2659DC211FA9B35800BFB9C2 /* GuideTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2659DC201FA9B35800BFB9C2 /* GuideTool.m */; };
+		26694BFB1FC5756B001E528B /* XTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 26694BFA1FC5756B001E528B /* XTableView.m */; };
+		26694BFF1FC577D0001E528B /* AddBillVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 26694BFE1FC577D0001E528B /* AddBillVC.m */; };
 		4A41C94EDF0EE5DF0B712B3E /* libPods-MysteriousSpace.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BB686F1317F8121FDD00A168 /* libPods-MysteriousSpace.a */; };
 /* End PBXBuildFile section */
 
@@ -76,6 +78,10 @@
 		2659DC251FA9BE7D00BFB9C2 /* Define.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Define.h; sourceTree = "<group>"; };
 		2659DC2F1FA9CC4200BFB9C2 /* UIColor+HEX.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HEX.m"; sourceTree = "<group>"; };
 		2659DC301FA9CC4200BFB9C2 /* UIColor+HEX.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+HEX.h"; sourceTree = "<group>"; };
+		26694BF91FC5756B001E528B /* XTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XTableView.h; sourceTree = "<group>"; };
+		26694BFA1FC5756B001E528B /* XTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XTableView.m; sourceTree = "<group>"; };
+		26694BFD1FC577D0001E528B /* AddBillVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddBillVC.h; sourceTree = "<group>"; };
+		26694BFE1FC577D0001E528B /* AddBillVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddBillVC.m; sourceTree = "<group>"; };
 		BB686F1317F8121FDD00A168 /* libPods-MysteriousSpace.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MysteriousSpace.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D351B7222A42AAF60F14A132 /* Pods-MysteriousSpace.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MysteriousSpace.release.xcconfig"; path = "Pods/Target Support Files/Pods-MysteriousSpace/Pods-MysteriousSpace.release.xcconfig"; sourceTree = "<group>"; };
 		F9E1DED68F420137DD925DA0 /* Pods-MysteriousSpace.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MysteriousSpace.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MysteriousSpace/Pods-MysteriousSpace.debug.xcconfig"; sourceTree = "<group>"; };
@@ -98,6 +104,7 @@
 			children = (
 				264DD7E61FAC58F700A8575C /* TabBar */,
 				264DD7D71FAC58F700A8575C /* Card */,
+				26694BFC1FC577B5001E528B /* Bill */,
 				264DD7E01FAC58F700A8575C /* Global */,
 				264DD7E31FAC58F700A8575C /* Login */,
 			);
@@ -124,6 +131,8 @@
 			children = (
 				264DD7E11FAC58F700A8575C /* XNavgationController.h */,
 				264DD7E21FAC58F700A8575C /* XNavgationController.m */,
+				26694BF91FC5756B001E528B /* XTableView.h */,
+				26694BFA1FC5756B001E528B /* XTableView.m */,
 			);
 			path = Global;
 			sourceTree = "<group>";
@@ -267,6 +276,15 @@
 				2659DC201FA9B35800BFB9C2 /* GuideTool.m */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		26694BFC1FC577B5001E528B /* Bill */ = {
+			isa = PBXGroup;
+			children = (
+				26694BFD1FC577D0001E528B /* AddBillVC.h */,
+				26694BFE1FC577D0001E528B /* AddBillVC.m */,
+			);
+			path = Bill;
 			sourceTree = "<group>";
 		};
 		E4B0B7DD91DEC502F377D8DD /* Pods */ = {
@@ -422,6 +440,8 @@
 				264DD7FB1FAC58F700A8575C /* HomeVC.m in Sources */,
 				264DD7F81FAC58F700A8575C /* XNavgationController.m in Sources */,
 				2659DBB91FA994A900BFB9C2 /* AppDelegate.m in Sources */,
+				26694BFF1FC577D0001E528B /* AddBillVC.m in Sources */,
+				26694BFB1FC5756B001E528B /* XTableView.m in Sources */,
 				264DD7FD1FAC58F700A8575C /* TabBarVC.m in Sources */,
 				264DD7F51FAC58F700A8575C /* AddCardVC.m in Sources */,
 				264DD7F61FAC58F700A8575C /* Card.m in Sources */,
