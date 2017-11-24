@@ -34,8 +34,12 @@
     for (AddCardItemView *itemView in self.items) {
         if (itemView.card) {
             [info addObject:@(itemView.card.type)];
-        } else if (itemView.inputText.length) {
-            [info addObject:itemView.inputText];
+        } else {
+            if (itemView.inputText.length) {
+                [info addObject:itemView.inputText];
+            } else {
+                [info addObject:@"---"];
+            }
         }
     }
     [[CardManager sharedManager] setInfo:info compltion:^(BOOL success, NSString *errMsg) {

@@ -22,6 +22,7 @@
 		2655F41D1FC7C8B800AF3D2D /* CardTypeChooseVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 2655F41C1FC7C8B800AF3D2D /* CardTypeChooseVc.m */; };
 		2655F4201FC7CD4B00AF3D2D /* CardChooseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2655F41F1FC7CD4B00AF3D2D /* CardChooseCell.m */; };
 		2655F4241FC7CFD100AF3D2D /* UIControlFastGet.m in Sources */ = {isa = PBXBuildFile; fileRef = 2659DC171FA9B27E00BFB9C2 /* UIControlFastGet.m */; };
+		2655F4281FC800E000AF3D2D /* CardInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2655F4271FC800E000AF3D2D /* CardInfoCell.m */; };
 		2659DBB91FA994A900BFB9C2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2659DBB81FA994A900BFB9C2 /* AppDelegate.m */; };
 		2659DBBF1FA994A900BFB9C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2659DBBD1FA994A900BFB9C2 /* Main.storyboard */; };
 		2659DBC11FA994A900BFB9C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2659DBC01FA994A900BFB9C2 /* Assets.xcassets */; };
@@ -61,6 +62,8 @@
 		2655F41E1FC7CD4B00AF3D2D /* CardChooseCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CardChooseCell.h; sourceTree = "<group>"; };
 		2655F41F1FC7CD4B00AF3D2D /* CardChooseCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CardChooseCell.m; sourceTree = "<group>"; };
 		2655F4251FC7EC1A00AF3D2D /* CardChooseProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CardChooseProtocol.h; sourceTree = "<group>"; };
+		2655F4261FC800E000AF3D2D /* CardInfoCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CardInfoCell.h; sourceTree = "<group>"; };
+		2655F4271FC800E000AF3D2D /* CardInfoCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CardInfoCell.m; sourceTree = "<group>"; };
 		2659DBB41FA994A900BFB9C2 /* MysteriousSpace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MysteriousSpace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2659DBB71FA994A900BFB9C2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2659DBB81FA994A900BFB9C2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -131,6 +134,8 @@
 				2655F41C1FC7C8B800AF3D2D /* CardTypeChooseVc.m */,
 				2655F41E1FC7CD4B00AF3D2D /* CardChooseCell.h */,
 				2655F41F1FC7CD4B00AF3D2D /* CardChooseCell.m */,
+				2655F4261FC800E000AF3D2D /* CardInfoCell.h */,
+				2655F4271FC800E000AF3D2D /* CardInfoCell.m */,
 				264DD7DC1FAC58F700A8575C /* Card.h */,
 				264DD7DD1FAC58F700A8575C /* Card.m */,
 				264DD7DE1FAC58F700A8575C /* CardManager.h */,
@@ -452,6 +457,7 @@
 				264DD7FC1FAC58F700A8575C /* MyProfileVC.m in Sources */,
 				2655F4201FC7CD4B00AF3D2D /* CardChooseCell.m in Sources */,
 				264DD7F41FAC58F700A8575C /* AddCardItemView.m in Sources */,
+				2655F4281FC800E000AF3D2D /* CardInfoCell.m in Sources */,
 				2659DBC71FA994A900BFB9C2 /* main.m in Sources */,
 				264DD7FE1FAC58F700A8575C /* UserInfoView.m in Sources */,
 				2655F41D1FC7C8B800AF3D2D /* CardTypeChooseVc.m in Sources */,

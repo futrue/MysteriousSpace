@@ -23,7 +23,7 @@ typedef NS_ENUM (NSInteger,CardType) {
     CardTypeMAX,// MAX              
 };
 
-@interface Card : NSObject
+@interface Card : NSObject<NSCoding>
 
 /** 名字 */
 @property (nonatomic, copy) NSString *userName;

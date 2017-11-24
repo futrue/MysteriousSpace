@@ -17,7 +17,7 @@
 - (instancetype)initWithDelegate:(id <UITableViewDelegate>)delegate dataSource:(id<UITableViewDataSource>)dataSource {
     self = [super init];
     if (self) {
-        self.tableFooterView = nil;
+        self.tableFooterView = [UIView new];
         self.delegate = delegate;
         self.dataSource = dataSource;
     }
@@ -28,7 +28,7 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        self.tableFooterView = nil;
+        self.tableFooterView = [UIView new];
     }
     return self;
 }

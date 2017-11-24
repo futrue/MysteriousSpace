@@ -9,7 +9,48 @@
 #import "Card.h"
 #import "MJExtension.h"
 
+
+//定义成宏 方便下面使用 也可以减少出错
+#define kUserName @"userName"
+#define kNumber @"number"
+#define kType @"type"
+#define kPhone @"phone"
+#define kLoginPassword @"loginPassword"
+#define kPayPassword @"payPassword"
+#define kImageUrl @"imageUrl"
+#define kID_Num @"ID_Num"
+
 @implementation Card
+
+- (void)encodeWithCoder:(NSCoder *)aCoder {
+    [aCoder encodeObject:_userName forKey:kUserName];
+    [aCoder encodeObject:_number forKey:kNumber];
+    [aCoder encodeInteger:_type forKey:kType];
+    [aCoder encodeObject:_phone forKey:kPhone];
+    [aCoder encodeObject:_loginPassword forKey:kLoginPassword];
+    [aCoder encodeObject:_payPassword forKey:kPayPassword];
+    [aCoder encodeObject:_imageUrl forKey:kImageUrl];
+    [aCoder encodeObject:_ID_Num forKey:kID_Num];
+}
+
+- (instancetype)initWithCoder:(NSCoder *)aDecoder {
+    if (self = [super init]) {
+        _userName = [aDecoder decodeObjectForKey:kUserName];
+        _number = [aDecoder decodeObjectForKey:kNumber];
+        _type = [aDecoder decodeIntegerForKey:kType];
+        _phone = [aDecoder decodeObjectForKey:kPhone];
+        _loginPassword = [aDecoder decodeObjectForKey:kLoginPassword];
+        _payPassword = [aDecoder decodeObjectForKey:kPayPassword];
+        _imageUrl = [aDecoder decodeObjectForKey:kImageUrl];
+        _ID_Num = [aDecoder decodeObjectForKey:kID_Num];
+    }
+    return self;
+}
+
+- (NSString *)number {
+    self.type = self.type;
+    return _number;
+}
 
 - (void)setType:(CardType)type {
     _type = type;
