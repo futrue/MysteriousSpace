@@ -10,13 +10,19 @@
 
 @implementation XTableView
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
++ (XTableView *)viewWithDelegate:(id <UITableViewDelegate>)delegate dataSource:(id<UITableViewDataSource>)dataSource {
+    return [[XTableView alloc] initWithDelegate:delegate dataSource:dataSource];
 }
-*/
+
+- (instancetype)initWithDelegate:(id <UITableViewDelegate>)delegate dataSource:(id<UITableViewDataSource>)dataSource {
+    self = [super init];
+    if (self) {
+        self.tableFooterView = nil;
+        self.delegate = delegate;
+        self.dataSource = dataSource;
+    }
+    return self;
+}
 
 - (instancetype)initWithFrame:(CGRect)frame
 {
@@ -26,4 +32,5 @@
     }
     return self;
 }
+
 @end

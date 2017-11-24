@@ -106,6 +106,13 @@
     return label;
 }
 
++ (UILabel *)labelWithFont:(UIFont *)font textColor:(UIColor *)textColor  {
+    UILabel *label = [[UILabel alloc] init];
+    label.textColor = textColor ? : [UIColor darkGrayColor];
+    label.font = font ? : FONT(15);
+    return label;
+}
+
 + (UILabel *)labelWithText:(NSString *)text {
     UILabel *label = [[UILabel alloc] init];
     label.text = text;

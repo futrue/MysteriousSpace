@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface XTableView : UITableView
-
++ (XTableView *)viewWithDelegate:(id <UITableViewDelegate>)delegate dataSource:(id<UITableViewDataSource>)dataSource;
 @end

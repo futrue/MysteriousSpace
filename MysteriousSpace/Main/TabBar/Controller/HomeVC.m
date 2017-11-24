@@ -71,7 +71,6 @@
         _tableView = [[XTableView alloc] initWithFrame:CGRectMake(0, 0, self.view.width, self.view.height) style:UITableViewStyleGrouped];
         _tableView.delegate = self;
         _tableView.dataSource = self;
-        
     }
     return _tableView;
 }

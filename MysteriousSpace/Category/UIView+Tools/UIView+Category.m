@@ -89,18 +89,6 @@
     return self.frame.size.height;
 }
 
-- (CGFloat)halfWidth {
-    return self.width / 2;
-}
-
-- (CGFloat)halfHeight {
-    return self.height / 2;
-}
-
-- (CGPoint)halfPoint {
-    return CGPointMake(self.halfWidth, self.halfHeight);
-}
-
 #pragma mark - O & S
 
 - (void)setOrigin:(CGPoint)origin {
@@ -124,4 +112,20 @@
 }
 
 
+@end
+
+
+@implementation UIView(FindFirstResponder)
+
+- (UIView *)findFirstResponder
+{
+    if (self.isFirstResponder) {
+        return self;
+    }
+    for (UIView *subView in self.subviews) {
+        UIView *responder = [subView findFirstResponder];
+        if (responder) return responder;
+    }
+    return nil;
+}
 @end

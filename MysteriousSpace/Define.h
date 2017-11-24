@@ -21,12 +21,15 @@
 #define COLOR_TEXT_CONTENT RGB(102, 102, 102)
 #define COLOR_PRIMARY RGB(255, 122, 63)
 #define ThemeColor [UIColor colorWithRed:0.92 green:0.34 blue:0.32 alpha:1]
+#define ThemeColor2 [UIColor colorWithRed:26.0/255.0 green:148.0/255.0 blue:213.0/255.0 alpha:1]
+#define ThemeColor3 UIColorHex(0e92dd);
 #define RandomColor [UIColor colorWithRed:(random()%255)/255.0 green:(random()%255)/255.0 blue:(random()%255)/255.0 alpha:1]
 
 #define RGB(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
 #define RGBA(r, g, b, a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)]
 #define XRGB(r,g,b) [UIColor colorWithRed:(0x##r)/255.0 green:(0x##g)/255.0 blue:(0x##b)/255.0 alpha:1]
 #define XRGBA(r,g,b,a) [UIColor colorWithRed:(0x##r)/255.0 green:(0x##g)/255.0 blue:(0x##b)/255.0 alpha:(a)]
+#define UIColorHex(_hex_)   [UIColor colorWithHexString:((__bridge NSString *)CFSTR(#_hex_))]
 
 
 
@@ -41,4 +44,5 @@
 #define TEST_IMG [UIImage imageNamed:@"test.jpg"]
 #define DEGREES_TO_RADIANS(d) (d * M_PI / 180)
 
+#define WeakSelf(weakSelf) __weak __typeof(&*self)weakSelf = self
 #endif /* Define_h */

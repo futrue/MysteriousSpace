@@ -20,5 +20,6 @@ typedef void(^Result)(BOOL success, NSString *errMsg);
 - (void)removeCard:(Card *)card;
 
 - (NSArray<Card *> *)allCards;
+- (NSArray<Card *> *)allCardNames;
 
 @end

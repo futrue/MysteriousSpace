@@ -28,6 +28,10 @@ static CardManager *manager = nil;
 }
 
 - (void)setInfo:(NSArray *)info compltion:(Result)result {
+    if ([info count] == 0) {
+        result(NO, @"信息不全");
+        return;
+    }
     if ([info[1] length] < 10) {
         if (result) {
             result(NO, @"卡号不全");
@@ -64,6 +68,17 @@ static CardManager *manager = nil;
 - (NSArray<Card *> *)allCards {
     return self.cardArray;
 }
+
+- (NSArray<Card *> *)allCardNames {
+    NSMutableArray *array = [NSMutableArray array];
+    for (CardType i = 0; i < CardTypeMAX - 1; i++) {
+        Card *card = [[Card alloc] init];
+        card.type = i;
+        [array addObject:card];
+    }
+    return array;
+}
+
 
 - (NSMutableArray<Card *> *)cardArray {
     if (!_cardArray) {

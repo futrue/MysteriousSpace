@@ -48,6 +48,7 @@
     } else if ([title isEqualToString:array[2]]) {
         self.textFieldMaxLength = 10;
         self.placeholder = [NSString stringWithFormat:@"银行%@",title];
+        self.textField.keyboardType = UIKeyboardTypeEmailAddress;
     } else if ([title isEqualToString:array[3]]) {
         self.textFieldMaxLength = 11;
         self.placeholder = @"预留手机号码";
@@ -73,13 +74,24 @@
     }
 }
 
+- (void)setInputText:(NSString *)inputText {
+    _inputText = inputText;
+    self.textField.text = inputText;
+}
+
+- (void)setCard:(Card *)card {
+    _card = card;
+    self.textField.text = [NSString stringWithFormat:@"%@[%@]",card.chianeseName,card.abbreviationName];
+}
+
+
 - (void)setupUI {
     self.backgroundColor = COLOR_WHITE;
     [self addSubview:self.titleLabel];
     [self addSubview:self.textField];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(textFieldTextDidChange:) name:UITextFieldTextDidChangeNotification object:nil];
     _titleLabel.text = self.title;
-
+    self.size = CGSizeMake(SCREEN_WIDTH, 45);
     [self makeConstraints];
 }
 
@@ -110,8 +122,8 @@
 
 - (void)textFieldDidBeginEditing:(UITextField *)textField {
     if (self.beginEditingBlock) {
-//        [textField resignFirstResponder];
-        self.beginEditingBlock(textField);
+        [textField resignFirstResponder];
+        self.beginEditingBlock();
     }
 }
 
@@ -176,7 +188,6 @@
         _textField.font = FONT(14);
         _textField.clearButtonMode = UITextFieldViewModeWhileEditing;//输入框中是否有个叉号，在什么时候显示，用于一次性删除输入框中的内容
         _textField.autocorrectionType = UITextAutocorrectionTypeNo;//是否纠错
-//        _textField.clearsOnBeginEditing = YES;//再次编辑就清空
         _textField.returnKeyType = UIReturnKeyDone;//return键变成什么键
         _textField.keyboardAppearance = UIKeyboardAppearanceDark;//键盘外观
 

@@ -19,5 +19,6 @@
 
 + (UILabel *)labelWithText:(NSString *)text textColor:(UIColor *)textColor bgColor:(UIColor *)bgColor;
 + (UILabel *)labelWithText:(NSString *)text textColor:(UIColor *)textColor;
++ (UILabel *)labelWithFont:(UIFont *)font textColor:(UIColor *)textColor;
 + (UILabel *)labelWithText:(NSString *)text;
 @end

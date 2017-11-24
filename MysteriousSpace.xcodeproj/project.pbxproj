@@ -18,6 +18,10 @@
 		264DD7FC1FAC58F700A8575C /* MyProfileVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 264DD7ED1FAC58F700A8575C /* MyProfileVC.m */; };
 		264DD7FD1FAC58F700A8575C /* TabBarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 264DD7EF1FAC58F700A8575C /* TabBarVC.m */; };
 		264DD7FE1FAC58F700A8575C /* UserInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 264DD7F21FAC58F700A8575C /* UserInfoView.m */; };
+		2655F41A1FC7B43000AF3D2D /* UIView+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 2659DC1B1FA9B27E00BFB9C2 /* UIView+Category.m */; };
+		2655F41D1FC7C8B800AF3D2D /* CardTypeChooseVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 2655F41C1FC7C8B800AF3D2D /* CardTypeChooseVc.m */; };
+		2655F4201FC7CD4B00AF3D2D /* CardChooseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2655F41F1FC7CD4B00AF3D2D /* CardChooseCell.m */; };
+		2655F4241FC7CFD100AF3D2D /* UIControlFastGet.m in Sources */ = {isa = PBXBuildFile; fileRef = 2659DC171FA9B27E00BFB9C2 /* UIControlFastGet.m */; };
 		2659DBB91FA994A900BFB9C2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2659DBB81FA994A900BFB9C2 /* AppDelegate.m */; };
 		2659DBBF1FA994A900BFB9C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2659DBBD1FA994A900BFB9C2 /* Main.storyboard */; };
 		2659DBC11FA994A900BFB9C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2659DBC01FA994A900BFB9C2 /* Assets.xcassets */; };
@@ -52,6 +56,11 @@
 		264DD7EF1FAC58F700A8575C /* TabBarVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarVC.m; sourceTree = "<group>"; };
 		264DD7F11FAC58F700A8575C /* UserInfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfoView.h; sourceTree = "<group>"; };
 		264DD7F21FAC58F700A8575C /* UserInfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfoView.m; sourceTree = "<group>"; };
+		2655F41B1FC7C8B800AF3D2D /* CardTypeChooseVc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CardTypeChooseVc.h; sourceTree = "<group>"; };
+		2655F41C1FC7C8B800AF3D2D /* CardTypeChooseVc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CardTypeChooseVc.m; sourceTree = "<group>"; };
+		2655F41E1FC7CD4B00AF3D2D /* CardChooseCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CardChooseCell.h; sourceTree = "<group>"; };
+		2655F41F1FC7CD4B00AF3D2D /* CardChooseCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CardChooseCell.m; sourceTree = "<group>"; };
+		2655F4251FC7EC1A00AF3D2D /* CardChooseProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CardChooseProtocol.h; sourceTree = "<group>"; };
 		2659DBB41FA994A900BFB9C2 /* MysteriousSpace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MysteriousSpace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2659DBB71FA994A900BFB9C2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2659DBB81FA994A900BFB9C2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -118,10 +127,15 @@
 				264DD7D91FAC58F700A8575C /* AddCardItemView.m */,
 				264DD7DA1FAC58F700A8575C /* AddCardVC.h */,
 				264DD7DB1FAC58F700A8575C /* AddCardVC.m */,
+				2655F41B1FC7C8B800AF3D2D /* CardTypeChooseVc.h */,
+				2655F41C1FC7C8B800AF3D2D /* CardTypeChooseVc.m */,
+				2655F41E1FC7CD4B00AF3D2D /* CardChooseCell.h */,
+				2655F41F1FC7CD4B00AF3D2D /* CardChooseCell.m */,
 				264DD7DC1FAC58F700A8575C /* Card.h */,
 				264DD7DD1FAC58F700A8575C /* Card.m */,
 				264DD7DE1FAC58F700A8575C /* CardManager.h */,
 				264DD7DF1FAC58F700A8575C /* CardManager.m */,
+				2655F4251FC7EC1A00AF3D2D /* CardChooseProtocol.h */,
 			);
 			path = Card;
 			sourceTree = "<group>";
@@ -429,14 +443,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2655F4241FC7CFD100AF3D2D /* UIControlFastGet.m in Sources */,
+				2655F41A1FC7B43000AF3D2D /* UIView+Category.m in Sources */,
 				264DD7F71FAC58F700A8575C /* CardManager.m in Sources */,
 				264DD7FA1FAC58F700A8575C /* DataCenterVC.m in Sources */,
 				2659DC211FA9B35800BFB9C2 /* GuideTool.m in Sources */,
 				264DD7F91FAC58F700A8575C /* LoginVC.m in Sources */,
 				264DD7FC1FAC58F700A8575C /* MyProfileVC.m in Sources */,
+				2655F4201FC7CD4B00AF3D2D /* CardChooseCell.m in Sources */,
 				264DD7F41FAC58F700A8575C /* AddCardItemView.m in Sources */,
 				2659DBC71FA994A900BFB9C2 /* main.m in Sources */,
 				264DD7FE1FAC58F700A8575C /* UserInfoView.m in Sources */,
+				2655F41D1FC7C8B800AF3D2D /* CardTypeChooseVc.m in Sources */,
 				264DD7FB1FAC58F700A8575C /* HomeVC.m in Sources */,
 				264DD7F81FAC58F700A8575C /* XNavgationController.m in Sources */,
 				2659DBB91FA994A900BFB9C2 /* AppDelegate.m in Sources */,

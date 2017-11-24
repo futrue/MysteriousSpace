@@ -16,7 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [UINavigationBar appearance].barTintColor = ThemeColor;
+    [UINavigationBar appearance].barTintColor = ThemeColor2;
 }
 
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated {
@@ -24,7 +24,6 @@
     // 判断下是否是根控制器
     
     if (self.childViewControllers.count != 0) { // 非根控制器
-        
         viewController.hidesBottomBarWhenPushed = YES;
         // 设置导航条左边的按钮
         self.navigationItem.hidesBackButton = NO;
