@@ -76,17 +76,6 @@
     }
 }
 
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    NSInteger index = indexPath.section;
-    if (index == 0) {
-        return [self.userInfoView systemLayoutSizeFittingSize:CGSizeZero].height;
-    } else if (index == 1) {
-        return 44;
-    } else {
-        return 40;
-    }
-}
-
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     static NSString *reuserID = @"cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:reuserID];
@@ -104,7 +93,9 @@
         cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     } else {
         [cell.contentView addSubview:self.userInfoView];
-        
+        [self.userInfoView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.edges.equalTo(cell.contentView);
+        }];
         cell.accessoryType = UITableViewCellAccessoryNone;
     }
     return cell;
@@ -127,6 +118,8 @@
         _tableView.dataSource = self;
         _tableView.delegate = self;
         _tableView.tableFooterView = [UIView new];
+        _tableView.rowHeight = UITableViewAutomaticDimension;
+        _tableView.estimatedRowHeight = 44;
     }
     return _tableView;
 }

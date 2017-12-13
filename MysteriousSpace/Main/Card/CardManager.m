@@ -92,7 +92,9 @@ static CardManager *manager = nil;
     NSKeyedUnarchiver *unarchiver = [[NSKeyedUnarchiver alloc] initForReadingWithData:_data];
     NSArray *cards = [unarchiver decodeObjectForKey:kCardSuffix];
     [unarchiver finishDecoding];
-    
+    for (Card *cd in cards) {
+        [cd setType:cd.type];
+    }
 //    NSLog(@"%@",cards);
     return cards;
 }
