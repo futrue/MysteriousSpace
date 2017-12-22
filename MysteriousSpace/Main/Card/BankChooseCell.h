@@ -1,5 +1,5 @@
 //
-//  CardChooseCell.h
+//  BankChooseCell.h
 //  MysteriousSpace
 //
 //  Created by SongGuoxing on 2017/11/24.
@@ -8,9 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@class Card;
-@interface CardChooseCell : UITableViewCell
+@class BankEntity;
+@interface BankChooseCell : UITableViewCell
 
-@property (nonatomic, strong) Card *card;
-
+@property (nonatomic, strong) BankEntity *bank;
 @end

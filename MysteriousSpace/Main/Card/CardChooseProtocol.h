@@ -8,9 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
-@class Card;
+@class BankEntity;
 @protocol CardChooseProtocol <NSObject>
 
-- (void)didChooseCard:(Card *)card;
+- (void)didChooseBank:(BankEntity *)bank;
 
 @end

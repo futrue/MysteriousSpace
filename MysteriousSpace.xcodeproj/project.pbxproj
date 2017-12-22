@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		26381C831FE3795E00FFF628 /* BankEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 26381C821FE3795E00FFF628 /* BankEntity.m */; };
+		26381C851FE37C6900FFF628 /* bankList in Resources */ = {isa = PBXBuildFile; fileRef = 26381C841FE37C6800FFF628 /* bankList */; };
 		264DD7F41FAC58F700A8575C /* AddCardItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 264DD7D91FAC58F700A8575C /* AddCardItemView.m */; };
 		264DD7F51FAC58F700A8575C /* AddCardVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 264DD7DB1FAC58F700A8575C /* AddCardVC.m */; };
 		264DD7F61FAC58F700A8575C /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 264DD7DD1FAC58F700A8575C /* Card.m */; };
@@ -20,7 +22,7 @@
 		264DD7FE1FAC58F700A8575C /* UserInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 264DD7F21FAC58F700A8575C /* UserInfoView.m */; };
 		2655F41A1FC7B43000AF3D2D /* UIView+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 2659DC1B1FA9B27E00BFB9C2 /* UIView+Category.m */; };
 		2655F41D1FC7C8B800AF3D2D /* CardTypeChooseVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 2655F41C1FC7C8B800AF3D2D /* CardTypeChooseVc.m */; };
-		2655F4201FC7CD4B00AF3D2D /* CardChooseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2655F41F1FC7CD4B00AF3D2D /* CardChooseCell.m */; };
+		2655F4201FC7CD4B00AF3D2D /* BankChooseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2655F41F1FC7CD4B00AF3D2D /* BankChooseCell.m */; };
 		2655F4241FC7CFD100AF3D2D /* UIControlFastGet.m in Sources */ = {isa = PBXBuildFile; fileRef = 2659DC171FA9B27E00BFB9C2 /* UIControlFastGet.m */; };
 		2655F4281FC800E000AF3D2D /* CardInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2655F4271FC800E000AF3D2D /* CardInfoCell.m */; };
 		2659DBB91FA994A900BFB9C2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2659DBB81FA994A900BFB9C2 /* AppDelegate.m */; };
@@ -31,10 +33,16 @@
 		2659DC211FA9B35800BFB9C2 /* GuideTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2659DC201FA9B35800BFB9C2 /* GuideTool.m */; };
 		26694BFB1FC5756B001E528B /* XTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 26694BFA1FC5756B001E528B /* XTableView.m */; };
 		26694BFF1FC577D0001E528B /* AddBillVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 26694BFE1FC577D0001E528B /* AddBillVC.m */; };
+		26E4C5391FE1354000BA6E39 /* XSegmentVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 26E4C5381FE1354000BA6E39 /* XSegmentVC.m */; };
+		26E4F8821FEB7DA600B1CD16 /* AddCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26E4F8811FEB7DA600B1CD16 /* AddCardViewController.m */; };
+		26E4F8851FEB859000B1CD16 /* AddCardCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 26E4F8841FEB859000B1CD16 /* AddCardCell.m */; };
 		4A41C94EDF0EE5DF0B712B3E /* libPods-MysteriousSpace.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BB686F1317F8121FDD00A168 /* libPods-MysteriousSpace.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		26381C811FE3795E00FFF628 /* BankEntity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BankEntity.h; sourceTree = "<group>"; };
+		26381C821FE3795E00FFF628 /* BankEntity.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BankEntity.m; sourceTree = "<group>"; };
+		26381C841FE37C6800FFF628 /* bankList */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = bankList; sourceTree = "<group>"; };
 		264DD7D81FAC58F700A8575C /* AddCardItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddCardItemView.h; sourceTree = "<group>"; };
 		264DD7D91FAC58F700A8575C /* AddCardItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddCardItemView.m; sourceTree = "<group>"; };
 		264DD7DA1FAC58F700A8575C /* AddCardVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddCardVC.h; sourceTree = "<group>"; };
@@ -59,8 +67,8 @@
 		264DD7F21FAC58F700A8575C /* UserInfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfoView.m; sourceTree = "<group>"; };
 		2655F41B1FC7C8B800AF3D2D /* CardTypeChooseVc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CardTypeChooseVc.h; sourceTree = "<group>"; };
 		2655F41C1FC7C8B800AF3D2D /* CardTypeChooseVc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CardTypeChooseVc.m; sourceTree = "<group>"; };
-		2655F41E1FC7CD4B00AF3D2D /* CardChooseCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CardChooseCell.h; sourceTree = "<group>"; };
-		2655F41F1FC7CD4B00AF3D2D /* CardChooseCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CardChooseCell.m; sourceTree = "<group>"; };
+		2655F41E1FC7CD4B00AF3D2D /* BankChooseCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BankChooseCell.h; sourceTree = "<group>"; };
+		2655F41F1FC7CD4B00AF3D2D /* BankChooseCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BankChooseCell.m; sourceTree = "<group>"; };
 		2655F4251FC7EC1A00AF3D2D /* CardChooseProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CardChooseProtocol.h; sourceTree = "<group>"; };
 		2655F4261FC800E000AF3D2D /* CardInfoCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CardInfoCell.h; sourceTree = "<group>"; };
 		2655F4271FC800E000AF3D2D /* CardInfoCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CardInfoCell.m; sourceTree = "<group>"; };
@@ -94,6 +102,12 @@
 		26694BFA1FC5756B001E528B /* XTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XTableView.m; sourceTree = "<group>"; };
 		26694BFD1FC577D0001E528B /* AddBillVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddBillVC.h; sourceTree = "<group>"; };
 		26694BFE1FC577D0001E528B /* AddBillVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddBillVC.m; sourceTree = "<group>"; };
+		26E4C5371FE1354000BA6E39 /* XSegmentVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XSegmentVC.h; sourceTree = "<group>"; };
+		26E4C5381FE1354000BA6E39 /* XSegmentVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XSegmentVC.m; sourceTree = "<group>"; };
+		26E4F8801FEB7DA600B1CD16 /* AddCardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddCardViewController.h; sourceTree = "<group>"; };
+		26E4F8811FEB7DA600B1CD16 /* AddCardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddCardViewController.m; sourceTree = "<group>"; };
+		26E4F8831FEB859000B1CD16 /* AddCardCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddCardCell.h; sourceTree = "<group>"; };
+		26E4F8841FEB859000B1CD16 /* AddCardCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddCardCell.m; sourceTree = "<group>"; };
 		BB686F1317F8121FDD00A168 /* libPods-MysteriousSpace.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MysteriousSpace.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D351B7222A42AAF60F14A132 /* Pods-MysteriousSpace.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MysteriousSpace.release.xcconfig"; path = "Pods/Target Support Files/Pods-MysteriousSpace/Pods-MysteriousSpace.release.xcconfig"; sourceTree = "<group>"; };
 		F9E1DED68F420137DD925DA0 /* Pods-MysteriousSpace.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MysteriousSpace.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MysteriousSpace/Pods-MysteriousSpace.debug.xcconfig"; sourceTree = "<group>"; };
@@ -111,6 +125,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		26381C801FE3793C00FFF628 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				26381C811FE3795E00FFF628 /* BankEntity.h */,
+				26381C821FE3795E00FFF628 /* BankEntity.m */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
 		264DD7D61FAC58F700A8575C /* Main */ = {
 			isa = PBXGroup;
 			children = (
@@ -130,10 +153,14 @@
 				264DD7D91FAC58F700A8575C /* AddCardItemView.m */,
 				264DD7DA1FAC58F700A8575C /* AddCardVC.h */,
 				264DD7DB1FAC58F700A8575C /* AddCardVC.m */,
+				26E4F8801FEB7DA600B1CD16 /* AddCardViewController.h */,
+				26E4F8811FEB7DA600B1CD16 /* AddCardViewController.m */,
+				26E4F8831FEB859000B1CD16 /* AddCardCell.h */,
+				26E4F8841FEB859000B1CD16 /* AddCardCell.m */,
 				2655F41B1FC7C8B800AF3D2D /* CardTypeChooseVc.h */,
 				2655F41C1FC7C8B800AF3D2D /* CardTypeChooseVc.m */,
-				2655F41E1FC7CD4B00AF3D2D /* CardChooseCell.h */,
-				2655F41F1FC7CD4B00AF3D2D /* CardChooseCell.m */,
+				2655F41E1FC7CD4B00AF3D2D /* BankChooseCell.h */,
+				2655F41F1FC7CD4B00AF3D2D /* BankChooseCell.m */,
 				2655F4261FC800E000AF3D2D /* CardInfoCell.h */,
 				2655F4271FC800E000AF3D2D /* CardInfoCell.m */,
 				264DD7DC1FAC58F700A8575C /* Card.h */,
@@ -230,6 +257,7 @@
 				264DD7D61FAC58F700A8575C /* Main */,
 				2659DC1E1FA9B35800BFB9C2 /* Utils */,
 				2659DC0D1FA9B27E00BFB9C2 /* Category */,
+				26381C801FE3793C00FFF628 /* Entities */,
 				2659DBB71FA994A900BFB9C2 /* AppDelegate.h */,
 				2659DBB81FA994A900BFB9C2 /* AppDelegate.m */,
 				2659DBBD1FA994A900BFB9C2 /* Main.storyboard */,
@@ -238,6 +266,7 @@
 				2659DBC51FA994A900BFB9C2 /* Info.plist */,
 				2659DBE61FA995E200BFB9C2 /* PrefixHeader.pch */,
 				2659DC251FA9BE7D00BFB9C2 /* Define.h */,
+				26381C841FE37C6800FFF628 /* bankList */,
 				2659DBC61FA994A900BFB9C2 /* main.m */,
 			);
 			path = MysteriousSpace;
@@ -291,6 +320,7 @@
 		2659DC1E1FA9B35800BFB9C2 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				26E4C5361FE1354000BA6E39 /* XSegmentVC */,
 				2659DC1F1FA9B35800BFB9C2 /* GuideTool.h */,
 				2659DC201FA9B35800BFB9C2 /* GuideTool.m */,
 			);
@@ -304,6 +334,15 @@
 				26694BFE1FC577D0001E528B /* AddBillVC.m */,
 			);
 			path = Bill;
+			sourceTree = "<group>";
+		};
+		26E4C5361FE1354000BA6E39 /* XSegmentVC */ = {
+			isa = PBXGroup;
+			children = (
+				26E4C5371FE1354000BA6E39 /* XSegmentVC.h */,
+				26E4C5381FE1354000BA6E39 /* XSegmentVC.m */,
+			);
+			path = XSegmentVC;
 			sourceTree = "<group>";
 		};
 		E4B0B7DD91DEC502F377D8DD /* Pods */ = {
@@ -384,6 +423,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26381C851FE37C6900FFF628 /* bankList in Resources */,
 				2659DBC41FA994A900BFB9C2 /* LaunchScreen.storyboard in Resources */,
 				2659DBC11FA994A900BFB9C2 /* Assets.xcassets in Resources */,
 				2659DBBF1FA994A900BFB9C2 /* Main.storyboard in Resources */,
@@ -450,12 +490,13 @@
 			files = (
 				2655F4241FC7CFD100AF3D2D /* UIControlFastGet.m in Sources */,
 				2655F41A1FC7B43000AF3D2D /* UIView+Category.m in Sources */,
+				26E4F8851FEB859000B1CD16 /* AddCardCell.m in Sources */,
 				264DD7F71FAC58F700A8575C /* CardManager.m in Sources */,
 				264DD7FA1FAC58F700A8575C /* DataCenterVC.m in Sources */,
 				2659DC211FA9B35800BFB9C2 /* GuideTool.m in Sources */,
 				264DD7F91FAC58F700A8575C /* LoginVC.m in Sources */,
 				264DD7FC1FAC58F700A8575C /* MyProfileVC.m in Sources */,
-				2655F4201FC7CD4B00AF3D2D /* CardChooseCell.m in Sources */,
+				2655F4201FC7CD4B00AF3D2D /* BankChooseCell.m in Sources */,
 				264DD7F41FAC58F700A8575C /* AddCardItemView.m in Sources */,
 				2655F4281FC800E000AF3D2D /* CardInfoCell.m in Sources */,
 				2659DBC71FA994A900BFB9C2 /* main.m in Sources */,
@@ -465,9 +506,12 @@
 				264DD7F81FAC58F700A8575C /* XNavgationController.m in Sources */,
 				2659DBB91FA994A900BFB9C2 /* AppDelegate.m in Sources */,
 				26694BFF1FC577D0001E528B /* AddBillVC.m in Sources */,
+				26E4C5391FE1354000BA6E39 /* XSegmentVC.m in Sources */,
 				26694BFB1FC5756B001E528B /* XTableView.m in Sources */,
 				264DD7FD1FAC58F700A8575C /* TabBarVC.m in Sources */,
+				26E4F8821FEB7DA600B1CD16 /* AddCardViewController.m in Sources */,
 				264DD7F51FAC58F700A8575C /* AddCardVC.m in Sources */,
+				26381C831FE3795E00FFF628 /* BankEntity.m in Sources */,
 				264DD7F61FAC58F700A8575C /* Card.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -612,7 +656,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = sgx.MysteriousSpace;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -630,7 +674,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = sgx.MysteriousSpace;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

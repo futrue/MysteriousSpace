@@ -15,6 +15,9 @@
 
 #import "Masonry.h"
 #import "YYKit.h"
+#import "MJExtension.h"
+#import "UIImageView+WebCache.h"
+
 #import "UIView+Tools.h"
 #import "UIView+Category.h"
 #import "UIControlFastGet.h"
@@ -24,6 +27,7 @@
 #import "CardManager.h"
 #import "XTableView.h"
 
+#import "BankEntity.h"
 
 #endif
 

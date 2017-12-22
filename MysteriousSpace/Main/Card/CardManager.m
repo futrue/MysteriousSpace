@@ -35,30 +35,8 @@ static CardManager *manager = nil;
     return manager;
 }
 
-- (void)setInfo:(NSArray *)info compltion:(Result)result {
-    if ([info count] == 0) {
-        result(NO, @"信息不全");
-        return;
-    }
-    if ([info[1] length] < 1) {
-        if (result) {
-            result(NO, @"卡号不全");
-            return;
-        }
-    }
-    // 顺序与propertyAarray对应
-    Card *card = [[Card alloc] init];
-    card.userName = info[0];
-    card.number = info[1];
-    card.type = [info[2] integerValue];
-    card.phone = info[3];
-    card.loginPassword = info[4];
-    card.payPassword = info[5];
-    card.imageUrl = info[6];
-    card.ID_Num = info[7];
+- (void)addCard:(Card *)card compltion:(Result)result {
     [self addCard:card];
-    
-    
     if (result) {
         result(YES, @"添加成功");
     }
@@ -92,26 +70,33 @@ static CardManager *manager = nil;
     NSKeyedUnarchiver *unarchiver = [[NSKeyedUnarchiver alloc] initForReadingWithData:_data];
     NSArray *cards = [unarchiver decodeObjectForKey:kCardSuffix];
     [unarchiver finishDecoding];
-    for (Card *cd in cards) {
-        [cd setType:cd.type];
-    }
+//    for (Card *cd in cards) {
+//        [cd setType:cd.type];
+//    }
 //    NSLog(@"%@",cards);
     return cards;
 }
 
-- (NSArray<Card *> *)allCardNames {
-    NSMutableArray *array = [NSMutableArray array];
-    for (CardType i = 0; i < CardTypeMAX - 1; i++) {
-        Card *card = [[Card alloc] init];
-        card.type = i;
-        [array addObject:card];
-    }
-    return array;
-}
+//- (NSArray<Card *> *)allCardNames {
+//    NSMutableArray *array = [NSMutableArray array];
+//    for (CardType i = 0; i < CardTypeMAX - 1; i++) {
+//        Card *card = [[Card alloc] init];
+//        card.type = i;
+//        [array addObject:card];
+//    }
+//    return array;
+//}
 
 - (NSString *)path {
     NSString *path = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).firstObject stringByAppendingString:@"cardInfo.table"];
     return path;
+}
+
+- (NSArray *)bankList {
+//    NSString *path = [[NSBundle mainBundle] pathForResource:@"bankList" ofType:nil];
+//    NSArray *array0 = [BankEntity mj_objectArrayWithFile:path];
+    NSArray *array = [BankEntity mj_objectArrayWithFilename:@"bankList"];
+    return array;
 }
 
 - (NSMutableArray<Card *> *)cardArray {

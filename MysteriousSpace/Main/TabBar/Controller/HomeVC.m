@@ -9,6 +9,8 @@
 #import "HomeVC.h"
 #import "AddCardVC.h"
 #import "AddBillVC.h"
+#import "AddCardViewController.h"
+
 @interface HomeVC ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (nonatomic, strong) XTableView *tableView;
@@ -25,14 +27,21 @@
     [self.view addSubview:self.tableView];
 }
 
+- (void)get {
+    NSArray *array1 = [BankEntity mj_objectArrayWithFilename:@"bankList"];
+    NSLog(@"====%@",array1);
+}
+
 - (void)addCardAction {
     AddCardVC *vc = [[AddCardVC alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (void)addBillAction {
+    AddCardViewController *adVc =[[AddCardViewController alloc] init];
+    
     AddBillVC *vc = [[AddBillVC alloc] init];
-    [self.navigationController pushViewController:vc animated:YES];
+    [self.navigationController pushViewController:adVc animated:YES];
 }
 
 

@@ -16,7 +16,6 @@
 }
 @property (nonatomic, strong) NSArray <AddCardItemView *> *items;
 @property (nonatomic, strong) UIScrollView *contentView;
-
 @end
 
 @implementation AddCardVC
@@ -33,7 +32,7 @@
     NSMutableArray *info = [NSMutableArray array];
     for (AddCardItemView *itemView in self.items) {
         if (itemView.card) {
-            [info addObject:@(itemView.card.type)];
+//            [info addObject:@(itemView.card.type)];
         } else {
             if (itemView.inputText.length) {
                 [info addObject:itemView.inputText];
@@ -42,13 +41,13 @@
             }
         }
     }
-    [[CardManager sharedManager] setInfo:info compltion:^(BOOL success, NSString *errMsg) {
-        if (success) {
-            [self.navigationController popViewControllerAnimated:NO];
-        } else {
-            NSLog(@"错误信息:%@",errMsg);
-        }
-    }];
+//    [[CardManager sharedManager] setInfo:info compltion:^(BOOL success, NSString *errMsg) {
+//        if (success) {
+//            [self.navigationController popViewControllerAnimated:NO];
+//        } else {
+//            NSLog(@"错误信息:%@",errMsg);
+//        }
+//    }];
     [self.view endEditing:YES];
 }
 
@@ -104,8 +103,8 @@
 }
 
 #pragma mark -  CardChooseProtocol
-- (void)didChooseCard:(Card *)card {
-    [self.items[2] setCard:card];
+- (void)didChooseBank:(BankEntity *)bank {
+    [self.items[2] setInputText:[NSString stringWithFormat:@"%@[%@]",bank.bank_name,bank.bank_ename]];
 }
 
 #pragma mark - keyboardWillChangeFrameNotification
@@ -145,6 +144,7 @@
     }
     return _contentView;
 }
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

@@ -8,11 +8,11 @@
 
 #import "CardTypeChooseVc.h"
 #import "Card.h"
-#import "CardChooseCell.h"
+#import "BankChooseCell.h"
 
 @interface CardTypeChooseVc ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) XTableView *tableView;
-@property (nonatomic, strong) NSArray *typeArray;
+@property (nonatomic, strong) NSArray *bankArray;
 
 @end
 
@@ -20,24 +20,24 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.typeArray = [[CardManager sharedManager] allCardNames];
+    self.bankArray = [[CardManager sharedManager] bankList];
     [self.view addSubview:self.tableView];
     self.tableView.frame = CGRectMake(0, 0, self.view.width, self.view.height);
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return [self.typeArray count];
+    return [self.bankArray count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    CardChooseCell *cell = [tableView dequeueReusableCellWithIdentifier:[CardChooseCell className]];
-    cell.card = self.typeArray[indexPath.row];
+    BankChooseCell *cell = [tableView dequeueReusableCellWithIdentifier:[BankChooseCell className]];
+    cell.bank = self.bankArray[indexPath.row];
     return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (self.delegate && [self.delegate respondsToSelector:@selector(didChooseCard:)]) {
-        [self.delegate didChooseCard:self.typeArray[indexPath.row]];
+    if (self.delegate && [self.delegate respondsToSelector:@selector(didChooseBank:)]) {
+        [self.delegate didChooseBank:self.bankArray[indexPath.row]];
     }
     [self.navigationController popViewControllerAnimated:YES];
     [tableView deselectRowAtIndexPath:indexPath animated:NO];
@@ -46,7 +46,7 @@
 - (XTableView *)tableView {
     if (!_tableView) {
         _tableView = [XTableView viewWithDelegate:self dataSource:self];
-        [_tableView registerClass:[CardChooseCell class] forCellReuseIdentifier:[CardChooseCell className]];
+        [_tableView registerClass:[BankChooseCell class] forCellReuseIdentifier:[BankChooseCell className]];
         _tableView.separatorColor = ThemeColor2;
         _tableView.rowHeight = 70;
     }

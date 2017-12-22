@@ -1,0 +1,137 @@
+(
+{
+"bank_name" = "中国农业银行";
+cid = abc;
+"bank_ename" = "ABC";
+"_description" = "The Agricultural Bank of China";
+"logo_image_url" = "http://192.168.1.192:9010/Public/Images/bank/abc.png";
+},
+{
+"bank_name" = "贵州省农村信用社";
+cid = gznx;
+"bank_ename" = "GZNX";
+"_description" = "GuiZhou Rural Credit Union";
+"logo_image_url" = "https://gss2.bdstatic.com/-fo3dSag_xI4khGkpoWK1HF6hhy/baike/crop%3D0%2C32%2C740%2C488%3Bc0%3Dbaike92%2C5%2C5%2C92%2C30/sign=c2808120c0ef76092844c3df13ed8fff/d4628535e5dde7115e9bc64bacefce1b9c1661c6.jpg";
+},
+{
+"bank_name" = "中国建设银行";
+cid = ccb;
+"bank_ename" = "CCB";
+"_description" = "China Construction Bank";
+"logo_image_url" = "http://192.168.1.192:9010/Public/Images/bank/ccb.png";
+},
+{
+"bank_name" = "招商银行";
+cid = cmb;
+"bank_ename" = "CMB";
+"_description" = "China Merchants Bank";
+"logo_image_url" = "http://192.168.1.192:9010/Public/Images/bank/cmb.png";
+},
+{
+"bank_name" = "中国邮政储蓄银行";
+cid = psbc;
+"bank_ename" = "PSBC";
+"_description" = "Postal Savings Bank of China";
+"logo_image_url" = "http://192.168.1.192:9010/Public/Images/bank/psbc.png";
+},
+{
+"bank_name" = "中国工商银行";
+cid = icbc;
+"bank_ename" = "ICBC";
+"_description" = "Industrial and Commercial Bank of China";
+"logo_image_url" = "http://192.168.1.192:9010/Public/Images/bank/icbc.png";
+},
+{
+"bank_name" = "中国交通银行";
+cid = jtb;
+"bank_ename" = "BCM";
+"_description" = "Bank of Communications";
+"logo_image_url" = "http://192.168.1.192:9010/Public/Images/bank/jtb.png";
+},
+{
+"bank_name" = "贵阳银行";
+cid = gyb;
+"bank_ename" = "GYB";
+"_description" = "Bank of Guiyang";
+"logo_image_url" = "http://pic119.nipic.com/file/20170105/20526467_150509552000_2.jpg";
+},
+{
+"bank_name" = "北京银行";
+cid = bjb;
+"bank_ename" = "BOB";
+"_description" = "Bank of Beijing";
+"logo_image_url" = "http://192.168.1.192:9010/Public/Images/bank/bjb.png";
+},
+{
+"bank_name" = "中国银行";
+cid = boc;
+"bank_ename" = "BOC";
+"_description" = "Bank of China";
+"logo_image_url" = "http://192.168.1.192:9010/Public/Images/bank/boc.png";
+},
+{
+"bank_name" = "平安银行";
+cid = pab;
+"bank_ename" = "";
+"_description" = "";
+
+"logo_image_url" = "http://192.168.1.192:9010/Public/Images/bank/pab.png";
+},
+{
+"bank_name" = "上海浦东发展银行";
+cid = spdb;
+"bank_ename" = "";
+"_description" = "";
+"logo_image_url" = "http://192.168.1.192:9010/Public/Images/bank/spdb.png";
+},
+{
+"bank_name" = "中信银行";
+cid = zxb;
+"bank_ename" = "";
+"_description" = "";
+"logo_image_url" = "http://192.168.1.192:9010/Public/Images/bank/zxb.png";
+},
+{
+"bank_name" = "中国光大银行";
+cid = bcm;
+"bank_ename" = "";
+"_description" = "";
+"logo_image_url" = "http://192.168.1.192:9010/Public/Images/bank/bcm.png";
+},
+{
+"bank_name" = "中国民生银行";
+cid = cmbc;
+"bank_ename" = "";
+"_description" = "";
+"logo_image_url" = "http://192.168.1.192:9010/Public/Images/bank/cmbc.png";
+},
+{
+"bank_name" = "兴业银行";
+cid = cib;
+"bank_ename" = "";
+"_description" = "";
+"logo_image_url" = "http://192.168.1.192:9010/Public/Images/bank/cib.png";
+},
+{
+"bank_name" = "广东发展银行";
+cid = gdb;
+"bank_ename" = "";
+"_description" = "";
+"logo_image_url" = "http://192.168.1.192:9010/Public/Images/bank/gdb.png";
+},
+{
+"bank_name" = "广州银行";
+cid = gzcb;
+"bank_ename" = "";
+"_description" = "";
+"logo_image_url" = "http://192.168.1.192:9010/Public/Images/bank/gzcb.png";
+},
+{
+"bank_name" = "华夏银行";
+cid = hxb;
+"bank_ename" = "";
+"_description" = "";
+"logo_image_url" = "http://192.168.1.192:9010/Public/Images/bank/hxb.png";
+}
+)
+

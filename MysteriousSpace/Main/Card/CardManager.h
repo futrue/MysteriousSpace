@@ -14,12 +14,12 @@ typedef void(^Result)(BOOL success, NSString *errMsg);
 @interface CardManager : NSObject
 
 + (CardManager *)sharedManager;
-- (void)setInfo:(NSArray *)info compltion:(Result)result;
+- (void)addCard:(Card *)card compltion:(Result)result;
 - (void)addCard:(Card *)card;
 
 - (void)removeCard:(Card *)card;
 
 - (NSArray<Card *> *)allCards;
 - (NSArray<Card *> *)allCardNames;
-
+- (NSArray *)bankList;
 @end

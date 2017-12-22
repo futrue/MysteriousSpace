@@ -65,7 +65,7 @@
 
 - (void)setCard:(Card *)card {
     _card = card;
-    self.typeLabel.text = [NSString stringWithFormat:@"%@[%@]",card.chianeseName,card.abbreviationName] ;
+    self.typeLabel.text = [NSString stringWithFormat:@"%@[%@]",card.bankEntity.bank_name,card.bankEntity.bank_ename] ;
     self.numLabel.text = card.number;
 }
 
